@@ -1,0 +1,238 @@
+html,
+body {
+    font-size: 62.5%;
+    font-family: "Roboto Slab", serif;
+    margin: 0;
+    padding: 0;
+}
+
+.body {
+    background-image: url(/src/img/Gitarre.jpg);
+    background-size: 100%;
+    background: contain;
+    background-attachment: fixed;
+}
+
+.flex_row {
+    display: flex;
+    flex-direction: row;
+}
+
+.flex_column {
+    display: flex;
+    flex-direction: column;
+}
+
+.headerNav {
+    color: #d2601a;
+    background-color: #1d3c45;
+    justify-content: space-between;
+}
+
+.header {
+    display: flex;
+    flex-direction: row;
+    font-size: 4rem;
+}
+
+.headerSvg {
+    width: 5rem;
+    fill: #d2601a;
+}
+.nav {
+    display: flex;
+    flex-direction: row;
+}
+
+.navButton {
+    color: #d2601a;
+    font-size: 2rem;
+    height: 5.5rem;
+    padding: 0 2rem;
+    background-color: #1d3c45;
+    border: 0;
+}
+
+/*Dieser Code kommt von hier:https://ianlunn.github.io/Hover/ */
+.hvr-sweep-to-bottom {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
+    -webkit-transition-property: color;
+    transition-property: color;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+}
+.hvr-sweep-to-bottom:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff1e1;
+    -webkit-transform: scaleY(0);
+    transform: scaleY(0);
+    -webkit-transform-origin: 50% 0;
+    transform-origin: 50% 0;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-sweep-to-bottom:hover,
+.hvr-sweep-to-bottom:focus,
+.hvr-sweep-to-bottom:active {
+    color: #1d3c45;
+}
+.hvr-sweep-to-bottom:hover:before,
+.hvr-sweep-to-bottom:focus:before,
+.hvr-sweep-to-bottom:active:before {
+    -webkit-transform: scaleY(1);
+    transform: scaleY(1);
+}
+
+.allContent {
+    margin: 0 20rem 0 20rem;
+}
+
+.firstDiv {
+    background-color: #1d3c45;
+    color: #d2601a;
+}
+
+.firstSec {
+    font-size: 2rem;
+    margin: 0 2rem 1rem 2rem;
+}
+
+.firstPicDiv {
+    max-width: 50%;
+    margin: 2rem;
+}
+
+.firstPic {
+    width: 30rem;
+}
+
+.mostOfContent {
+    padding: 0 2rem 2rem;
+    background-color: #fff1e1;
+    color: #1d3c45;
+}
+
+.SecTittel {
+    font-size: 3.5rem;
+}
+
+.sectionDiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.normalSecDesign {
+    width: fit-content;
+    max-width: 45rem;
+    padding: 2rem;
+    margin: 0 1rem 2rem 1rem;
+    border-radius: 2rem;
+    font-size: 2rem;
+    background-color: #1d3c45;
+    color: #d2601a;
+}
+
+.normalSecDesign:hover {
+    transform: scale(1.05);
+    transition-duration: 0.5s;
+}
+
+.normalSecDesign::before {
+    transition: scale(1);
+    transition-duration: 1s;
+}
+
+.specialSecDesign {
+    margin: 0 0 0 2rem;
+    align-self: flex-end;
+    font-size: 2rem;
+}
+
+.YtVideo {
+    height: 50rem;
+}
+
+.noMargin {
+    margin: 0;
+}
+
+.footer {
+    color: #d2601a;
+    background-color: #1d3c45;
+    font-size: 2rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.links {
+    font-size: 1.5rem;
+    color: #fff1e1;
+}
+
+@media screen and (max-width: 1100px) {
+    .allContent {
+        margin: 0 10rem 0 10rem;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .flex_row {
+        flex-direction: column;
+    }
+
+    .nav {
+        justify-content: space-between;
+    }
+
+    .firstDiv {
+        flex-direction: column;
+    }
+
+    .firstPicDiv {
+        margin: 0;
+    }
+
+    .firstPic {
+        max-width: 50rem;
+    }
+
+    .sectionDiv {
+        flex-direction: column;
+    }
+
+    .normalSecDesign {
+        margin: 1rem 0 1rem 0;
+        max-width: 70rem;
+    }
+
+    .normalSecImg {
+        padding: 0;
+        max-width: 30rem;
+    }
+
+    .allContent {
+        margin: 0;
+    }
+
+    .footer {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,9 @@
+Bildquellen:
+ElvisPresley.jpg -- https://www.stockvault.net/photo/200318/elvis-presley
+ElvisHintergrund.jpg -- https://commons.wikimedia.org/wiki/File:Jakub_Machulda_jako_Elvis_Presley_(2017).jpg
+staticmap.png -- https://geboren.am/person/elvis-presley
+
+Farbpalette:
+#1d3c45
+#d2601a
+#fff1e1
